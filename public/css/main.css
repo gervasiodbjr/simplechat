@@ -1,0 +1,24 @@
+.chat-container {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 4px;
+    width: 360px;
+    height: 470px;
+    padding: 5px;
+}
+
+.login-form-div {
+    border: solid 1px rgb(197, 226, 253);
+    border-radius: 4px;
+    background-color: rgb(210, 233, 255);
+    padding: 70px 25px 0px 15px;
+    text-align: center;
+    height: 100%;
+}
+
+label {
+    margin: auto;
+}
