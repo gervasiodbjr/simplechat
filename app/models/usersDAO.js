@@ -5,6 +5,15 @@ class userDAO {
         this._conn = conn;
     }
 
+    testLogin (email, password) {
+        var res = this._comn.query(
+            "select * from users where email = '" + email + "' and password = '" + password,
+            (err, result) => {
+                console.log(result);
+            }
+        )
+    }
+
 }
 
 module.exports = () => {
