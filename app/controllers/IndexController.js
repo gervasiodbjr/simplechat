@@ -9,6 +9,10 @@ class IndexController {
     }
 
     getSession (req, res) {
+        if ( typeof req.session.email !== 'undefined')
+            return req.session;
+        const conn = this._app.config.dbConnection;
+        var userDAO = new this._app.models.usersDAO(this._app, conn);
         res.render('index', { page: 'dados', data: req.body});
     }
 }
