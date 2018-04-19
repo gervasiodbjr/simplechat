@@ -7,4 +7,6 @@ const connection = mysql.createConnection({
     database: 'simplechat'
 });
 
-export default connection;
+module.exports = () => {
+    return connection;
+};

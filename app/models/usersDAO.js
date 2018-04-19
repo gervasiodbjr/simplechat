@@ -6,10 +6,12 @@ class userDAO {
     }
 
     testLogin (email, password) {
-        var res = this._comn.query(
-            "select * from users where email = '" + email + "' and password = '" + password,
+        var SQL = "select * from users where mail = '" + email + "' and password = '" + password + "'";
+        var res = this._conn.execute(
+            SQL,
             (err, result) => {
-                console.log(result);
+                // return result[0].name;
+                console.log(result[0].name);
             }
         )
     }
