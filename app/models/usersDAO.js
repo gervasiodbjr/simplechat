@@ -1,4 +1,4 @@
-class userDAO {
+class UserDAO {
     
     constructor(app, conn) {
         this._app = app;
@@ -36,5 +36,5 @@ class userDAO {
 }
 
 module.exports = () => {
-    return userDAO;
+    return UserDAO;
 }

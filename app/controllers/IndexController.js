@@ -12,7 +12,7 @@ class IndexController {
                 data = req.body
                 page = 'dados'
                 const conn = this._app.config.dbConnection
-                var userDAO = new this._app.models.usersDAO(this._app, conn)
+                var userDAO = new this._app.models.UsersDAO(this._app, conn)
                 userDAO.testLogin(req.body.mail, req.body.password)
             }
             res.render('index', { page: page, data: data})
