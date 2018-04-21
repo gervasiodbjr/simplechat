@@ -18,20 +18,6 @@ class UserDAO {
             }
         )
     }
-
-    query (conn, SQL) {
-        return new Promise(
-            (resolve, reject) => {
-                conn.query(SQL , (err, rows) => {
-                    if (!err)
-                        resolve(rows)
-                    else
-                        reject(err)
-                })
-            }
-        )
-    }
-
 }
 
 module.exports = () => {
