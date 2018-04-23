@@ -14,7 +14,7 @@
             <div class="chat-container">
                 <% if (page == 'login') { %>
                     <% include partial/_login %>
-                <% } else { %>
+                <% } else if (page = 'chat') { %>
                     <%= data.mail %>
                 <% } %>
             </div>

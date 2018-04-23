@@ -19,6 +19,12 @@
     height: 100%;
 }
 
+.chat-div {
+    border: solid 1px rgb(197, 226, 253);
+    border-radius: 4px;
+    background-color: rgb(210, 233, 255);
+}
+
 label {
     margin: auto;
 }
